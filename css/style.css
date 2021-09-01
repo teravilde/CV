@@ -1,0 +1,101 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+h1, h2, h3, input, p, form, div,img{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.head{
+display: flex;
+justify-content: space-between;
+}
+.container, .container_about {
+	width: 1200
+	margin: 0 auto;
+}
+h1 ,h2{
+	font-family: 'Dancing Script', cursive;
+	margin:30px;
+	font-size: 40px;
+	padding: 0 0 30px 0;
+}
+.galery {
+	height:2300px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+
+}
+
+img{
+	width: 370px;
+	margin: 15px;
+	box-shadow: 5px 5px 5px grey;
+	cursor: pointer;
+}
+button{
+	border:none;
+	background: #fff;
+	cursor: pointer;
+
+}
+.cv{position: absolute;
+	margin-top:0px;
+
+}
+button:active
+	.cv{
+		margin-top:30px;
+	}
+
+a{
+	color: #000;
+	cursor: pointer;	
+	text-decoration: none;
+
+}
+p{
+	padding: 0 40px;
+}
+/*стилизация полной картинки*/
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.popup:not(:target) {
+  display: none;
+}
+
+.popup:target {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
+.full-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+}
